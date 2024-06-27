@@ -4,6 +4,9 @@
 package design.patterns;
 
 import org.junit.jupiter.api.Test;
+
+import design_pattern.App;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class AppTest {
