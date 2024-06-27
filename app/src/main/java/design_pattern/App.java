@@ -3,15 +3,19 @@
  */
 package design_pattern;
 
+import design_pattern.factory_method.Logistics;
+import design_pattern.factory_method.logistics.AirLogistics;
+import design_pattern.factory_method.logistics.RoadLogistics;
+import design_pattern.factory_method.logistics.SeaLogistics;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        log.info(new App().getGreeting());
+        Logistics[] logistics = {new RoadLogistics(), new SeaLogistics(), new AirLogistics()};
+        for (Logistics logistic : logistics) {
+            logistic.planDelivery();
+        }
     }
 }
