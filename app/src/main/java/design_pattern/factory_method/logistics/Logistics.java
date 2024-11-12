@@ -1,4 +1,4 @@
-package design_pattern.factory_method;
+package design_pattern.factory_method.logistics;
 
 import design_pattern.factory_method.transport.Transport;
 

@@ -3,8 +3,8 @@
  */
 package design_pattern;
 
-import design_pattern.factory_method.Logistics;
 import design_pattern.factory_method.logistics.AirLogistics;
+import design_pattern.factory_method.logistics.Logistics;
 import design_pattern.factory_method.logistics.RoadLogistics;
 import design_pattern.factory_method.logistics.SeaLogistics;
 import lombok.extern.slf4j.Slf4j;
